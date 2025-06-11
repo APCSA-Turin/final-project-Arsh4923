@@ -237,8 +237,7 @@ public class App { // the user is going to enter the names of 2 Pokémon they wo
     }
     
     // This method is important since it finds which pokemon has the higher average base stats which compares them using this.
-   
-    {
+    private static double getAverageStats(JSONObject pokemon) {
         return Math.round((double) getTotalStats(pokemon) / pokemon.getJSONArray("stats").length());
     }
 }
